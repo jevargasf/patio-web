@@ -17,7 +17,7 @@ body{
     height: 160vh;
     z-index: -1;
     left: 50%;
-    translate: -50% -10%;
+    translate: -50% -20%;
 }
 
 #gradiente{
@@ -52,18 +52,18 @@ header{
     top: 4%;
     left: 50%;
     translate: -50% 0%;
-
+width: max-content;
 }
 
 header nav{
 	float:right;
-	margin:;
-	right:1.5;
+	right:1.5%;
 }
 
-
-nav ul{
+header nav.opacidad{
+	opacity: 0.0;
 }
+
 
 nav ul li{
 	float: left;
@@ -84,11 +84,13 @@ h1{
 	display:inline-block;
 	font-size: 2em;
 	color: #0000e2;
+	width: max-content;
 }
 
 h3{
 	font-size: .8em;
 	letter-spacing: 1px;
+	width: max-content;
 
 
 }
@@ -121,15 +123,74 @@ p{
 	scale: 1;
 }
 
+@keyframes acercar{
+    0%{
+    	scale:.8;
+    	filter: blur(10px);
+    }
+    50%{
+    	scale: 1;
+    	filter: blur(0px);
+    }
+
+     70%{
+    	scale: 1;
+    	filter: blur(0px);
+    }
+    100%{
+    	scale: 1;
+    	filter: blur(15px);
+
+    }
+}
+
+
 #intro p{
 	text-align: center;
     scale: 1;
     margin: 0px 150px 0px 150px;
     float: inline-end;
     filter: blur(0px);
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: acercar;
+
+    animation-range: entrey -50% cover 50%;
+
+
+
+
+
 }
+
+
+
 
 
 #capitulos{
 	background-color: rgba(0, 0, 0, 0.15);
+	background-color:red;
+}
+
+
+@media (max-width: 1000px) {
+main{
+	width:100%;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+
+}
+#intro p {
+
+    margin: 0px 20px 0px 20px;
+
+}
+
+#fondo1{
+    left: 10%;
+}
+
 }
