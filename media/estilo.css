@@ -1,0 +1,19 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, pre, code, address, variable, form, fieldset, blockquote {
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+	font-family: gotham;
+	overflow-x: hidden;
+}
+
+body{
+	width:100%;
+	height:100%;
+}
+content{
+	width: 1000px;
+	background: pink;
+	height: 800px;
+	display:block;
+	margin: 0 auto;
+}
