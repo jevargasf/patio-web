@@ -62,9 +62,9 @@ h1{
 	bottom:15%;
 	left:50%;
 	translate: -50% 0%;
+	scale: 1;
 }
 
 #capitulos{
 	background-color: rgba(0, 0, 0, 0.15);
-
 }
