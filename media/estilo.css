@@ -127,6 +127,7 @@ section{
 	padding:100px 0px 0px 0px;
 }
 
+
 #intro h1{
 	position: fixed;
 	bottom:20%;
@@ -316,3 +317,8 @@ section{
 	scale: 1.5;
 }
 }
+
+.nuevo-estilo {
+	background-color: #0000e2;
+}
+
