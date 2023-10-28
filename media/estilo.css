@@ -1,3 +1,4 @@
+/*///////////////////// GENERALES ///////////////////////////////*/
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, pre, code, address, variable, form, fieldset, blockquote {
 	padding: 0;
 	margin: 0;
@@ -12,22 +13,50 @@ body{
 	height:100%;
 }
 
+h1{
+	text-align: center;
+	display:inline-block;
+	font-size: 2em;
+	color: #0000e2;
+	width: max-content;
+}
+
+
+h2{
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+h3{
+	font-size: .8em;
+	letter-spacing: 1px;
+}
+
+p{
+	font-family: courier;
+	letter-spacing: 1px;
+	font-size: 1em;
+}
+
+/*///////////////////// IMAGEN INTRO ///////////////////////////////*/
+
 #fondo1{
 	position: fixed;
-    height: 160vh;
-    z-index: -1;
-    left: 50%;
-    translate: -50% -20%;
+	height: 160vh;
+	z-index: -1;
+	left: 50%;
+	translate: -50% -20%;
 }
 
 #gradiente{
-
 	width:100%;
 	overflow:hidden;
 	height:90%;
-background: rgb(240,240,240);
-background: linear-gradient(0deg, rgba(240,240,240,1) 10%, rgba(240,240,240,0) 65%);
+	background: rgb(240,240,240);
+	background: linear-gradient(0deg, rgba(240,240,240,1) 10%, rgba(240,240,240,0) 65%);
 }
+
+/*///////////////////// CONTENIDO ///////////////////////////////*/
 
 content{
 	background: rgba(240,240,240,1);
@@ -44,15 +73,25 @@ main{
 	position: relative;
 }
 
+
+/*///////////////////// IMAGEN INTRO ///////////////////////////////*/
+
 header{
-    position: fixed;
-    height: 50px;
-    float: right;
-    margin: 0 auto;
-    top: 4%;
-    left: 50%;
-    translate: -50% 0%;
-width: max-content;
+	position: fixed;
+	height: 50px;
+	float: right;
+	margin: 0 auto;
+	top: 4%;
+	left: 50%;
+	translate: -50% 0%;
+	width: 1000px;
+	z-index: 5;
+}
+
+header img{
+	width:12px;
+	filter: blur(.5px);
+
 }
 
 header nav{
@@ -72,39 +111,21 @@ nav ul li{
 	font-size:1em;
 }
 
+/*///////////////////// SECCIONES ///////////////////////////////*/
+
 section{
 	width:100%;
 	height:40%;
 	box-sizing: border-box;
-
 }
 
-h1{
-	text-align: center;
-	display:inline-block;
-	font-size: 2em;
-	color: #0000e2;
-	width: max-content;
-}
-
-h3{
-	font-size: .8em;
-	letter-spacing: 1px;
-	width: max-content;
-
-
-}
-
-p{
-	font-family: courier;
-	letter-spacing: 1px;
-	font-size: 1em;
-}
+/*///////////////////// INTRO ///////////////////////////////*/
 
 #intro{
 	text-align: center;
-	height:320px;
+	height:400px;
 	padding:100px 0px 0px 0px;
+	pointer-events: none;
 }
 
 #intro h1{
@@ -120,77 +141,177 @@ p{
 	bottom:17.5%;
 	left:50%;
 	translate: -50% 0%;
+	width: max-content;
 	scale: 1;
 }
 
 @keyframes acercar{
-    0%{
-    	scale:.8;
-    	filter: blur(10px);
-    }
-    50%{
-    	scale: 1;
-    	filter: blur(0px);
-    }
+	0%{
+		scale:.8;
+		filter: blur(10px);
+	}
+	10%{
+		filter: blur(0px);
+	}  
+	60%{
+		scale: 1;
+		filter: blur(0px);
+	}
 
-     70%{
-    	scale: 1;
-    	filter: blur(0px);
-    }
-    100%{
-    	scale: 1;
-    	filter: blur(15px);
+	80%{
+		scale: 1;
+		filter: blur(0px);
+	}
+	100%{
+		scale: 1;
+		filter: blur(15px);
 
-    }
+	}
 }
 
+@keyframes acercar2{
+	0%{
+		scale:.8;
+		filter: blur(10px);
+	}
+	30%{
+		filter: blur(0px);
+	}  
+	50%{
+		scale: 1;
+		filter: blur(0px);
+	}
 
+	65%{
+		scale: 1;
+		filter: blur(0px);
+	}
+	100%{
+		scale: 1;
+		filter: blur(25px);
+	}
+}
 #intro p{
 	text-align: center;
-    scale: 1;
-    margin: 0px 150px 0px 150px;
-    float: inline-end;
-    filter: blur(0px);
-    view-timeline-name: --image;
-    view-timeline-axis: block;
-
-    animation-timeline: --image;
-    animation-name: acercar;
-
-    animation-range: entrey -50% cover 50%;
-
-
-
-
-
+	scale: 1;
+	margin: 0px 150px 0px 150px;
+	float: inline-end;
+	filter: blur(0px);
+	view-timeline-name: --image;
+	view-timeline-axis: block;
+	animation-timeline: --image;
+	animation-name: acercar;
 }
 
-
-
-
+/*///////////////////// CAPITULOS ///////////////////////////////*/
 
 #capitulos{
-	background-color: rgba(0, 0, 0, 0.15);
-	background-color:red;
+	height: max-content;
+	view-timeline-name: --image;
+	view-timeline-axis: block;
+	animation-timeline: --image;
+	animation-name: acercar2;
 }
 
+#capitulos h2{
+	margin-bottom: 50px;
+
+}
+
+.slider{
+	width:90%;
+	margin: 0 auto;
+}
+
+.slider div{
+
+	text-align: center;
+	height:400px;
+	overflow: visible;
+
+}
+.slider div img{
+	width:100%;
+	margin-bottom:10px;
+
+
+}
+  .slick-slide {
+	opacity: .6;
+      margin: 0 5px;
+  }
+
+  /* the parent */
+  .slick-list {
+      margin: 0 -5px;
+  }
+
+.slick-center{
+	opacity: 1;
+}
+
+
+.slider div h3{
+	align-content: center;
+}
+
+
+.slider .slick-prev:before,.slider .slick-next:before{
+	color:#fff;
+
+}
+.slider .slick-prev,.slider .slick-next{
+	top:20%;
+	z-index: 10;
+	scale: 1.5;
+}
+
+#porque{
+	margin-top:50px;
+}
+
+
+/*///////////////////// MEDIA QUERIES ///////////////////////////////*/
 
 @media (max-width: 1000px) {
-main{
-	width:100%;
-	display: block;
-	margin: 0 auto;
-	position: relative;
+	main{
+		width:100%;
+		display: block;
+		margin: 0 auto;
+		position: relative;
+
+	}
+
+	header{
+		padding:0px 25px 0px 20px;
+		box-sizing: border-box;
+		width:100%;
+
+	}
+
+	#intro p {
+
+		margin: 0px 20px 0px 20px;
+
+	}
+
+	#fondo1{
+		left: 10%;
+	}
+
+.slider{
+	width:85%;
 
 }
-#intro p {
-
-    margin: 0px 20px 0px 20px;
-
+#capitulos{
 }
 
-#fondo1{
-    left: 10%;
+#porque{
+	margin-top:200px;
 }
-
+.slider .slick-prev,.slider .slick-next{
+	top:45%;
+	z-index: 10;
+	scale: 1.5;
+}
 }

@@ -9,7 +9,9 @@
     <meta name="ad.size" content="width=300,height=320">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" href="js/index.js"></script>
-
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -17,15 +19,15 @@
     <div id="gradiente"><img id="fondo1" src="media/fondo.jpg"></div>
     <content>
         <main>
-
+<!-----------------------HEADER------------------------>
             <header>
-
+                <img src="media/icono.svg">
 
                 <nav id="nav1">
                     <ul>
                         <li>PROYECTO</li>
                         <li>-</li>
-                        <li>CAPITULOS</li>
+                        <li>CAPÍTULOS</li>
                         <li>-</li>
                         <li>COLABORA</li>
                         <li>-</li>
@@ -38,7 +40,7 @@
 
 
 
-
+<!-----------------------INTRO------------------------>
 
             <section id="intro">
 
@@ -55,22 +57,37 @@
 
             </section>
 
-
+<!-----------------------CAPITULOS------------------------>
 
             <section id="capitulos">
 
-                <h2>CAPÍTULO</h2>
+                <h2>CAPÍTULOS</h2>
                 <div id="slider">
+
+
+  <div class="slider">
+    <div><img src="media/fondo.jpg"><h3>#1 <br>VELORIO - CANTORES A LO DIVINO <br>(CODEGUA/MOSTAZAL)</h3></div>
+    <div><img src="media/fondo.jpg"><h3>#2 <br>LOS 16 <br>(RANCAGUA)</h3></div>
+    <div><img src="media/fondo.jpg"><h3>#3 <br>ARTESANÍA EN HOJA DE CHOCLO <br>(PICHIDEGUA)</h3></div>
+    <div><img src="media/fondo.jpg"><h3>#4 <br>LA MUERTE DE LA LAGUNA <br>(SAN VICENTE)</h3></div>
+    <div><img src="media/fondo.jpg"><h3>#5 <br>ARRIERA <br>(SAN FERNANDO)</h3></div>
+    <div><img src="media/fondo.jpg"><h3>#6 <br>PESCADORES ARTESANALES <br>(PICHILEMU)</h3></div>
+    <div><img src="media/fondo.jpg"><h3>#7 <br>CEMENTERIO DE LA ESTRELLA <br>(LA ESTRELLA)</h3></div>
+    <div><img src="media/fondo.jpg"><h3>#8 <br>HISTORIAS DE CAMPO <br>(PAREDONES)</h3></div>
+    <div><img src="media/fondo.jpg"><h3>#9 <br>ANIMITA DE LOS TRES HERMANOS <br>(SANTA CRUZ)</h3></div>
+    <div><img src="media/fondo.jpg"><h3>#10 <br>CONVERSAR CON LOS MUERTOS <br>(SIN COMUNA)</h3></div>
+  </div>
+
 
 
                 </div>
             </section>
 
 
-            <!--PORQUE LA MUERTE-->
+<!-----------------------PORQUE LA MUERTE------------------------>
 
-            <section>
-                <h3>¿PORQUÉ LA MUERTE?</h3>
+            <section id="porque">
+                <h2>¿PORQUÉ LA MUERTE?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                     sed diam nonummy nibh euismod tincidunt ut laoreet dolore
                     magna aliquam erat volutpat. Ut wisi enim ad minim
@@ -100,7 +117,7 @@
 
             <section>
 
-                <!--PLATAFORMA-->
+<!-----------------------PLATAFORMA------------------------>
 
                 <h2>PLATAFORMA</h2>
 
@@ -128,7 +145,7 @@
             </section>
 
 
-            <!--RIFA Y DONACIONES-->
+<!-----------------------RIFA Y DONACIONES------------------------>
 
 
 
@@ -180,7 +197,11 @@
 
             </section>
 
+<!-----------------------FOOTER------------------------>
+
             <h4></h4>
+
+
 
             <nav>
                 <img src="">
@@ -197,6 +218,39 @@
     </content>
 
 
+ <script type="text/javascript">
+    $(document).ready(function(){
+
+$('.slider').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 1000,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 700,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
+
+
+    });
+  </script>
 
 </body>
 </html>
