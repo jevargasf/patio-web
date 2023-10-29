@@ -1,10 +1,18 @@
-const section = document.querySelector("section#intro")
+// Fetch data
+async function dataAPI() {
+    const res = await fetch("https://patio-api.onrender.com/")
+    const data = await res.json()
+    document.getElementById("subtituloIntro").innerHTML = data.hola
+}
+
+dataAPI()
+
+// Animación Título Principal con scroll
+
 const patioTitulo = document.getElementById("tituloIntro")
 const patioSubtitulo = document.getElementById("subtituloIntro")
 
-   
-//Función que maneja el evento de scroll
-window.onscroll = function() {
+   window.onscroll = function() {
     if (scrollY > 100) {
         patioTitulo.classList = "opacidad"
         patioSubtitulo.classList = "opacidad"
