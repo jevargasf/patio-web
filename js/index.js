@@ -1,13 +1,16 @@
 const section = document.querySelector("section#intro")
-const patio = document.getElementById("tituloIntro")
+const patioTitulo = document.getElementById("tituloIntro")
+const patioSubtitulo = document.getElementById("subtituloIntro")
 
    
 //Función que maneja el evento de scroll
 window.onscroll = function() {
     if (scrollY > 100) {
-        patio.classList = "opacidad"
+        patioTitulo.classList = "opacidad"
+        patioSubtitulo.classList = "opacidad"
     } else if (scrollY <= 100) {
-        patio.classList.remove("opacidad")
+        patioTitulo.classList.remove("opacidad")
+        patioSubtitulo.classList.remove("opacidad")
     }
 //    document.getElementById("demo").innerHTML = scrollY;
 };
