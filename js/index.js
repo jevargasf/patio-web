@@ -12,5 +12,4 @@ window.onscroll = function() {
         patioTitulo.classList.remove("opacidad")
         patioSubtitulo.classList.remove("opacidad")
     }
-//    document.getElementById("demo").innerHTML = scrollY;
 };
