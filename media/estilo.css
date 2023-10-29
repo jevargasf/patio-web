@@ -135,7 +135,7 @@ section{
 	translate: -50% 0%;
 	pointer-events: none;
 	scale: 1;
-	transition: opacity 2s ease 1s;
+	transition: opacity .5s ease 0s;
 }
 
 #intro h3{
@@ -146,7 +146,7 @@ section{
 	width: max-content;
 	pointer-events: none;
 	scale: 1;
-	transition: opacity 2s ease 1s;
+	transition: opacity .5s ease 0s;
 }
 
 @keyframes acercar{
