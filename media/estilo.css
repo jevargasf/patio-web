@@ -135,7 +135,7 @@ section{
 	translate: -50% 0%;
 	pointer-events: none;
 	scale: 1;
-	transition: opacity .5s ease 0s;
+	transition: opacity .25s ease 0s;
 }
 
 #intro h3{
@@ -146,7 +146,7 @@ section{
 	width: max-content;
 	pointer-events: none;
 	scale: 1;
-	transition: opacity .5s ease 0s;
+	transition: opacity .25s ease 0s;
 }
 
 @keyframes acercar{
@@ -274,8 +274,34 @@ section{
 	scale: 1.5;
 }
 
+
+
+/*///////////////////// PORQUE ///////////////////////////////*/
+
+
 #porque{
 	margin-top:50px;
+	background-color:pink;
+	position: relative;
+}
+
+#porque h2, #porque p{
+	width: 50%;
+    text-align: left;
+    display: inline-block;
+}
+
+
+#porque img{
+    width: 50%;
+    float: right;
+
+}
+
+#porque div img{
+    width: 10%;
+    float: right;
+
 }
 
 

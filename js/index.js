@@ -13,10 +13,10 @@ const patioTitulo = document.getElementById("tituloIntro")
 const patioSubtitulo = document.getElementById("subtituloIntro")
 
    window.onscroll = function() {
-    if (scrollY > 100) {
+    if (scrollY > 50) {
         patioTitulo.classList = "opacidad"
         patioSubtitulo.classList = "opacidad"
-    } else if (scrollY <= 100) {
+    } else if (scrollY <= 50) {
         patioTitulo.classList.remove("opacidad")
         patioSubtitulo.classList.remove("opacidad")
     }
