@@ -280,29 +280,31 @@ section{
 
 
 #porque{
-	margin-top:200px;
 	background-color:pink;
-	position: relative;
-	height: fit-content;
+	position:relative;
+	overflow:auto;
+	height: auto;
 }
 
-#porque h2, #porque p{
+#porque div, #porque img{
 	width: 50%;
-    text-align: left;
     display: inline-block;
 }
 
+#porque h2, #porque p{
+	text-align: left;
+}
 
 #porque img{
-    width: 50%;
-    float: right;
-}
-
-#porque div img{
-    width: 10%;
-    float: right;
+	float: right;
 
 }
+
+/* .clearfix::after{
+	content: "";
+	clear: both;
+	display: table;
+} */
 
 /* //////////////////// PATREON ////////////////// */
 
