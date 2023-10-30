@@ -276,13 +276,14 @@ section{
 
 
 
-/*///////////////////// PORQUE ///////////////////////////////*/
+/*///////////////////// POR QUÉ ///////////////////////////////*/
 
 
 #porque{
-	margin-top:50px;
+	margin-top:200px;
 	background-color:pink;
 	position: relative;
+	height: fit-content;
 }
 
 #porque h2, #porque p{
@@ -295,7 +296,6 @@ section{
 #porque img{
     width: 50%;
     float: right;
-
 }
 
 #porque div img{
@@ -304,6 +304,39 @@ section{
 
 }
 
+/* //////////////////// PATREON ////////////////// */
+
+#patreon{
+	margin-top: 100px;
+	background-color: aquamarine;
+	height: fit-content;
+}
+#patreon img{
+    width: 5%;
+    float: right;
+
+}
+
+/* //////////////////// PLATAFORMA ////////////////// */
+
+
+#plataforma{
+	margin-top: 100px;
+	background-color: aqua;
+	height: fit-content;
+}
+/* //////////////////// RIFA ////////////////// */
+#rifa{
+	margin-top: 100px;
+	height: fit-content;
+	background-color: palegoldenrod;
+}
+/* //////////////////// FOOTER ////////////////// */
+footer{
+	margin-top: 100px;
+	background-color: pink;
+	height: fit-content;
+}
 
 /*///////////////////// MEDIA QUERIES ///////////////////////////////*/
 
@@ -340,8 +373,31 @@ section{
 #capitulos{
 }
 
+/* POR QUÉ */
+
 #porque{
 	margin-top:200px;
+}
+
+/* PATREON  */
+
+#patreon{
+	margin-top:200px;
+}
+/* PLATAFORMA */
+
+#plataforma{
+	margin-top: 200px;
+}
+
+/* RIFA */
+#rifa{
+	margin-top: 200px;
+}
+
+/* FOOTER */
+footer{
+	margin-top: 200px;
 }
 .slider .slick-prev,.slider .slick-next{
 	top:45%;
