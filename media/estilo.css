@@ -280,25 +280,29 @@ section{
 
 
 #porque{
-	background-color:pink;
-	position:relative;
-	overflow:auto;
-	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-#porque div, #porque img{
+#porque div{
 	width: 50%;
-    display: inline-block;
 }
 
-#porque h2, #porque p{
-	text-align: left;
+#porque h2{
+	text-align: start;
 }
 
+#porque p{
+	padding: 2rem;
+	font-size: small;
+	text-align: justify;
+}
 #porque img{
-	float: right;
-}
+	height: 100%;
+	mask-image: radial-gradient(circle 150px,#000, transparent);
 
+}
 /* //////////////////// PATREON ////////////////// */
 
 #patreon{
@@ -361,6 +365,7 @@ footer{
 		left: 10%;
 	}
 
+
 .slider{
 	width:85%;
 
@@ -371,29 +376,29 @@ footer{
 /* POR QUÉ */
 
 #porque{
-	margin-top:200px;
+	margin-top: 200px;
+	flex-wrap: wrap;
+	height: auto;
+	justify-content: center;
+}
+
+#porque img {
+	margin-top: 1rem;
+	max-width: 425px;
 }
 
 /* PATREON  */
 
-#patreon{
-	margin-top:200px;
-}
+
 /* PLATAFORMA */
 
-#plataforma{
-	margin-top: 200px;
-}
+
 
 /* RIFA */
-#rifa{
-	margin-top: 200px;
-}
+
 
 /* FOOTER */
-footer{
-	margin-top: 200px;
-}
+
 .slider .slick-prev,.slider .slick-next{
 	top:45%;
 	z-index: 10;
