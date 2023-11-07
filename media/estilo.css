@@ -341,7 +341,9 @@ section{
 
 /* //////////////////// PLATAFORMA ////////////////// */
 
-
+#plataforma h2{
+	margin-bottom: 2rem;
+}
 #plataforma{
 	margin-top: 100px;
 	height: fit-content;
@@ -351,10 +353,22 @@ section{
 	display: grid;
 	grid-template-rows: repeat(3, 1fr);
 	grid-template-columns: repeat(2, 1fr);
+	column-gap: 3rem;
+	align-items: center;
 }
 
+#plataforma div{
+	text-align: left;
+	
+}
+
+#plataforma dd{
+	text-align: left;	
+	margin-top: 2rem;
+}
 #plataforma img{
-	max-width: 300px;
+	max-width: 400px;
+	margin: 0 auto;
 }
 
 
