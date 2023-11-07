@@ -343,6 +343,8 @@ section{
 
 #plataforma h2{
 	margin-bottom: 2rem;
+	margin-left: auto;
+	margin-right: auto;
 }
 #plataforma{
 	margin-top: 100px;
@@ -376,8 +378,48 @@ section{
 #rifa{
 	margin-top: 100px;
 	height: fit-content;
-	background-color: palegoldenrod;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 1fr 5fr 3fr;
+	gap: 1rem;
 }
+
+#rifa1{
+	grid-row: 1;
+	grid-column: 1 / 4;
+	text-align: center;
+}
+
+#rifa2{
+	grid-row: 2;
+	grid-column: 1 / 4;
+	text-align: center;
+}
+
+#rifa3{
+	grid-row: 3;
+	grid-column: 1;
+	text-align: left;
+}
+
+#rifa4{
+	grid-row: 3;
+	grid-column: 2;
+	text-align: center;
+}
+
+#rifa5{
+	grid-row: 3;
+	grid-column: 3;
+	text-align: center;
+}
+
+#rifa6{
+	margin: 0 auto;
+	grid-row: 4;
+	grid-column: 1 / 4;
+}
+
 /* //////////////////// FOOTER ////////////////// */
 footer{
 	margin-top: 100px;
