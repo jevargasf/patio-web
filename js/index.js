@@ -11,6 +11,7 @@ dataAPI()
 
 const patioTitulo = document.getElementById("tituloIntro")
 const patioSubtitulo = document.getElementById("subtituloIntro")
+const nav = document.getElementById("nav")
 
    window.onscroll = function() {
     if (scrollY > 50) {
@@ -19,5 +20,9 @@ const patioSubtitulo = document.getElementById("subtituloIntro")
     } else if (scrollY <= 50) {
         patioTitulo.classList.remove("opacidad")
         patioSubtitulo.classList.remove("opacidad")
+    } if (scrollY > 750) {
+        nav.classList = "general"
+    } else if (scrollY <= 750) {
+        nav.classList.remove("general")
     }
 };

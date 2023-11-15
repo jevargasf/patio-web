@@ -1,4 +1,5 @@
 /*///////////////////// GENERALES ///////////////////////////////*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400&display=swap');
 
 *{
 	padding: 0;
@@ -93,6 +94,7 @@ header img{
 }
 
 
+/*/// NAVBAR ///*/
 
 header nav.opacidad{
 	opacity: 0.0;
@@ -112,6 +114,18 @@ nav ul li{
 	font-size:0.8em;
 	padding: 0.1rem;
 }
+
+.general *{
+	background-color: #00f;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #e6e6e6;
+	letter-spacing: 0.24em;
+	font-size: 0.75rem;
+	padding-top: 0.4rem;
+	padding-bottom: 0.4rem;
+}
+
 
 /*///////////////////// SECCIONES ///////////////////////////////*/
 
@@ -231,10 +245,12 @@ section{
 .slider{
 	width:90%;
 	margin: 0 auto;
+	color: #00f;
 }
-
+.slider p, .slider h4{
+	font-family: 'Roboto', sans-serif;
+}
 .slider div{
-
 	text-align: center;
 	height:400px;
 	overflow: visible;
@@ -260,11 +276,14 @@ section{
 	opacity: 1;
 }
 
-
 .slider div h3{
+	font-family: 'Montserrat', sans-serif;
 	align-content: center;
 }
 
+.slider p{
+	font-size: .5rem;
+}
 
 .slider .slick-prev:before,.slider .slick-next:before{
 	color:#fff;
@@ -274,6 +293,10 @@ section{
 	top:20%;
 	z-index: 10;
 	scale: 1.5;
+}
+
+.slick-current{
+	border: solid 1px;
 }
 
 
