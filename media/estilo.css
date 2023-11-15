@@ -249,22 +249,21 @@ section{
 }
 .slider p, .slider h4{
 	font-family: 'Roboto', sans-serif;
+	font-size: .5rem;
+	margin: 5%;
 }
 .slider div{
-	text-align: center;
-	height:400px;
+	height:auto;
 	overflow: visible;
-
 }
 .slider div img{
-	width:100%;
-	margin-bottom:10px;
-
-
+	box-sizing: border-box;
+	width: 98%;
+	margin:1% 1% 1rem 1%;
 }
   .slick-slide {
 	opacity: .6;
-      margin: 0 5px;
+    margin: 0 5px;
   }
 
   /* the parent */
@@ -276,13 +275,9 @@ section{
 	opacity: 1;
 }
 
-.slider div h3{
+.slider h3{
 	font-family: 'Montserrat', sans-serif;
-	align-content: center;
-}
-
-.slider p{
-	font-size: .5rem;
+	margin: 5%;
 }
 
 .slider .slick-prev:before,.slider .slick-next:before{
@@ -296,7 +291,8 @@ section{
 }
 
 .slick-current{
-	border: solid 1px;
+	border: solid .5px;
+	box-shadow: 4px 4px;
 }
 
 
