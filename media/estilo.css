@@ -80,11 +80,8 @@ main{
 header{
 	position: fixed;
 	height: 50px;
-	float: right;
 	margin: 0 auto;
 	top: 4%;
-	left: 50%;
-	translate: -50% 0%;
 	width: 1000px;
 	z-index: 5;
 }
@@ -95,21 +92,25 @@ header img{
 
 }
 
-header nav{
-	float:right;
-	right:1.5%;
-}
+
 
 header nav.opacidad{
 	opacity: 0.0;
 }
 
+nav ul{
+	display: flex;
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content:center;
+	flex-wrap: wrap;
+}
 
 nav ul li{
-	float: left;
-	margin-right:5px;
 	list-style: none;
-	font-size:1em;
+	font-size:0.8em;
+	padding: 0.1rem;
 }
 
 /*///////////////////// SECCIONES ///////////////////////////////*/
