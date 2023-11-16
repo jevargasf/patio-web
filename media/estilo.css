@@ -280,6 +280,18 @@ section{
   .slick-center{
 	opacity: 1;
 }
+
+/* BOTONES SLICK */
+.slider .slick-prev:before,.slider .slick-next:before{
+	color:#fff;
+
+}
+
+.slider .slick-prev,.slider .slick-next{
+	top:20%;
+	z-index: 10;
+	scale: 1.5;
+}
 /* 
 .slider{
 	width: 90%;
