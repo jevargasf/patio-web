@@ -20,9 +20,9 @@ const nav = document.getElementById("nav")
     } else if (scrollY <= 50) {
         patioTitulo.classList.remove("opacidad")
         patioSubtitulo.classList.remove("opacidad")
-    } if (scrollY > 750) {
+    } if (scrollY > 608) {
         nav.classList = "general"
-    } else if (scrollY <= 750) {
+    } else if (scrollY <= 608) {
         nav.classList.remove("general")
     }
 };

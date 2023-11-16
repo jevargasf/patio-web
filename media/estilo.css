@@ -242,8 +242,47 @@ section{
 
 }
 
+/* ESTILOS SLICK  */
+.slider div{
+	overflow: visible;
+	height: auto;
+	color: #00f;
+}
+
+.slider div img{
+	box-sizing: border-box;
+	width: 98%;
+	margin:1% 1% 1rem 1%;
+
+}
+
+.slider p, .slider h4{
+	font-family: 'Roboto', sans-serif;
+	font-size: .5rem;
+	margin: 5%;
+}
+
+.slider h3{
+	font-family: 'Montserrat', sans-serif;
+	margin: 5%;
+}
+.slick-current{
+	box-sizing: border-box;
+ 	border-style: solid none; 
+	border-width: .5px;
+ 	box-shadow: 4px 4px;
+}
+
+.slick-slide {
+	opacity: .6;
+    margin: 0 5px;
+  }
+  .slick-center{
+	opacity: 1;
+}
+/* 
 .slider{
-	width:90%;
+	width: 90%;
 	margin: 0 auto;
 	color: #00f;
 }
@@ -265,9 +304,9 @@ section{
 	opacity: .6;
     margin: 0 5px;
   }
-
+*/
   /* the parent */
-  .slick-list {
+/*  .slick-list {
       margin: 0 -5px;
   }
 
@@ -294,7 +333,7 @@ section{
 	border: solid .5px;
 	box-shadow: 4px 4px;
 }
-
+ */
 
 
 /*///////////////////// POR QUÉ ///////////////////////////////*/
@@ -477,13 +516,18 @@ footer{
 	}
 
 
+
+/* 
 .slider{
-	width:85%;
+	width: 50%;
 
 }
-#capitulos{
+.slider .slick-prev,.slider .slick-next{
+	top:45%;
+	z-index: 10;
+	scale: 1.5;
 }
-
+ */
 /* POR QUÉ */
 
 #porque{
@@ -510,9 +554,5 @@ footer{
 
 /* FOOTER */
 
-.slider .slick-prev,.slider .slick-next{
-	top:45%;
-	z-index: 10;
-	scale: 1.5;
-}
+
 }
