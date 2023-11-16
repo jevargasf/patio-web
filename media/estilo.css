@@ -262,6 +262,7 @@ section{
 
 .slider p, .slider h4{
 	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 	font-size: .5rem;
 	margin: 5%;
 }
@@ -293,10 +294,16 @@ section{
 /*///////////////////// POR QUÉ ///////////////////////////////*/
 
 
-#porque{
+#porque {
+	width: 90%;
+	margin: 200px auto 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	box-sizing: border-box;
+	border: solid .5px;
+	color: #00f;
+	height: auto;
 }
 
 #porque div{
@@ -304,18 +311,23 @@ section{
 }
 
 #porque h2{
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
 	text-align: start;
+	padding: 1rem;
 }
 
 #porque p{
-	padding: 2rem;
-	font-size: small;
-	text-align: justify;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	padding: 1rem;
+	font-size: .75rem;
+	text-align: left;
+	margin: auto;
 }
 #porque img{
 	height: 100%;
-	mask-image: radial-gradient(circle 150px,#000, transparent);
-
+	max-width: 450px;
 }
 /* //////////////////// PATREON ////////////////// */
 
