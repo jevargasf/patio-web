@@ -242,7 +242,7 @@ section{
 
 }
 
-/* ESTILOS SLICK  */
+/* ESTILOS SLIDER  */
 .slider div{
 	overflow: visible;
 }
@@ -282,71 +282,12 @@ section{
 	opacity: 1;
 }
 
-/* BOTONES SLICK */
-.slider .slick-prev:before,.slider .slick-next:before{
-	color:#fff;
 
-}
-
-.slider .slick-prev,.slider .slick-next{
-	top:20%;
-	z-index: 10;
-	scale: 1.5;
-}
-/* 
-.slider{
-	width: 90%;
-	margin: 0 auto;
-	color: #00f;
-}
-.slider p, .slider h4{
-	font-family: 'Roboto', sans-serif;
-	font-size: .5rem;
-	margin: 5%;
-}
-.slider div{
-	height:auto;
-	overflow: visible;
-}
-.slider div img{
-	box-sizing: border-box;
-	width: 98%;
-	margin:1% 1% 1rem 1%;
-}
-  .slick-slide {
-	opacity: .6;
-    margin: 0 5px;
-  }
-*/
   /* the parent */
 /*  .slick-list {
       margin: 0 -5px;
-  }
+  } */
 
-.slick-center{
-	opacity: 1;
-}
-
-.slider h3{
-	font-family: 'Montserrat', sans-serif;
-	margin: 5%;
-}
-
-.slider .slick-prev:before,.slider .slick-next:before{
-	color:#fff;
-
-}
-.slider .slick-prev,.slider .slick-next{
-	top:20%;
-	z-index: 10;
-	scale: 1.5;
-}
-
-.slick-current{
-	border: solid .5px;
-	box-shadow: 4px 4px;
-}
- */
 
 
 /*///////////////////// POR QUÉ ///////////////////////////////*/
@@ -529,18 +470,6 @@ footer{
 	}
 
 
-
-/* 
-.slider{
-	width: 50%;
-
-}
-.slider .slick-prev,.slider .slick-next{
-	top:45%;
-	z-index: 10;
-	scale: 1.5;
-}
- */
 /* POR QUÉ */
 
 #porque{
