@@ -245,11 +245,15 @@ section{
 /* ESTILOS SLICK  */
 .slider div{
 	overflow: visible;
+}
+.card{
 	height: auto;
 	color: #00f;
+	box-sizing: border-box;
+	border: solid .5px; 
 }
 
-.slider div img{
+.slider img{
 	box-sizing: border-box;
 	width: 98%;
 	margin:1% 1% 1rem 1%;
@@ -267,9 +271,6 @@ section{
 	margin: 5%;
 }
 .slick-current{
-	box-sizing: border-box;
- 	border-style: solid none; 
-	border-width: .5px;
  	box-shadow: 4px 4px;
 }
 
