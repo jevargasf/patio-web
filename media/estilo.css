@@ -7,7 +7,8 @@
 	list-style: none;
 	font-weight: normal;
 	font-family: times;
-}
+/* 	outline: 1px solid red;
+ */}
 
 body{
 	width:100%;
@@ -243,21 +244,18 @@ section{
 }
 
 /* ESTILOS SLIDER  */
-.slider div{
-	overflow: visible;
-}
+
 .card{
 	height: auto;
 	color: #00f;
 	box-sizing: border-box;
-	border: solid .5px; 
+	border: solid .5px;
 }
 
 .slider img{
 	box-sizing: border-box;
 	width: 98%;
 	margin:1% 1% 1rem 1%;
-
 }
 
 .slider p, .slider h4{
@@ -271,6 +269,7 @@ section{
 	font-family: 'Montserrat', sans-serif;
 	margin: 5%;
 }
+
 .slick-current{
  	box-shadow: 4px 4px;
 }
