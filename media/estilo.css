@@ -8,8 +8,8 @@
 	font-weight: normal;
 	font-family: 'Times New Roman', Times, serif;
 	color: #00f;
-	/* 	outline: 1px solid red; */
-}
+/* 	outline: 1px solid red;
+ */}
 
 body{
 	width:100%;
@@ -23,7 +23,6 @@ h1{
 	font-size: 2em;
 	width: max-content;
 }
-
 
 h2{
 	text-align: center;
@@ -326,25 +325,34 @@ section{
 }
 
 .porque div{
-	max-width: 50%;
+	max-width: 48%;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin: .5rem;
+	display: flex;
+	flex-direction: column;
 }
 
 .porque h2{
+	box-sizing: border-box;
+	margin: auto 0;
 	font-family: 'Montserrat', sans-serif;
 	text-align: start;
 	padding: 1rem;
 }
 
 .porque p{
+	box-sizing: border-box;
+	margin: auto;
 	font-weight: 300;
 	padding: 1rem;
 	font-size: .75rem;
 	text-align: left;
-	margin: auto;
+	line-height: 1rem;
 }
 .porque img{
-	height: 100%;
-	max-width: 450px;
+	width: 1000px;
+	max-width: 800px;
 }
 /* //////////////////// PATREON ////////////////// */
 
