@@ -401,36 +401,54 @@ section{
 
 /* //////////////////// PLATAFORMA ////////////////// */
 
-#plataforma h2{
-	margin-bottom: 2rem;
-	margin-left: auto;
-	margin-right: auto;
-}
-#plataforma{
+.plataforma{
 	margin-top: 100px;
-	height: fit-content;
 }
 
-#plataforma dl{
+.plataforma dl{
 	display: grid;
 	grid-template-rows: repeat(3, 1fr);
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 3rem;
+	row-gap: 2rem;
+}
+
+.plataforma div{
+	text-align: right;
+	box-sizing: border-box;
+	border-top: dotted 3px;
+	height: 100%;
+	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
+	padding: 2rem;
 }
 
-#plataforma div{
+.plataforma dt{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5rem;
+	margin: auto;
+	width: 100%;
+	flex-basis: 100%;
+}
+.plataforma dd{
+	font-family: 'courier';
+	letter-spacing: 1px;
+	font-size: .6rem;
+	line-height: .75rem;
+	text-align: right;	
+	margin: auto;
+	width: 100%;
+	flex-basis: 100%;
+}
+
+.plataforma .contenedor-izquierda dt, .plataforma .contenedor-izquierda dd{
 	text-align: left;
-	
 }
 
-#plataforma dd{
-	text-align: left;	
-	margin-top: 2rem;
-}
-#plataforma img{
-	max-width: 400px;
-	margin: 0 auto;
+.plataforma img{
+	max-width: 100%;
+	margin: 0;
 }
 
 
