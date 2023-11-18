@@ -536,17 +536,17 @@ footer{
 
 /* POR QUÉ */
 
-#porque{
+/* .porque{
 	margin-top: 200px;
 	flex-wrap: wrap;
 	height: auto;
 	justify-content: center;
 }
 
-#porque img {
+.porque img {
 	margin-top: 1rem;
 	max-width: 425px;
-}
+} */
 
 /* PATREON  */
 
