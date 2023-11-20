@@ -505,6 +505,10 @@ footer{
 	height: fit-content;
 }
 
+footer img{
+	max-width: 5%;
+}
+
 /*///////////////////// MEDIA QUERIES ///////////////////////////////*/
 
 @media (max-width: 1000px) {
