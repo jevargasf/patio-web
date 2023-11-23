@@ -500,7 +500,7 @@ section{
 
 /* //////////////////// FOOTER ////////////////// */
 footer{
-	background-image: url("media/footer.png");
+	background-image: url("footer.png");
 	background-size: cover;
 	height: 25%;
 	padding: 10% 0;
