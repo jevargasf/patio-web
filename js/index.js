@@ -26,3 +26,5 @@ const nav = document.getElementById("nav")
         nav.classList.remove("general")
     }
 };
+
+// Renderización dinámica de componentes
