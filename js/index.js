@@ -37,16 +37,16 @@ navFundamentacion.addEventListener('click', (e)=>{
     for(let i=0; i<elementosNav.length; i++){
         if(elementosNav[i].classList.contains("nav-select")){
             elementosNav[i].classList.remove("nav-select")
+            e.target.classList = "nav-select"
         }
     }
-    e.target.classList = "nav-select"
     for(let i=0; i<divsFundamentacion.length; i++){
-        if(divsFundamentacion[i].classList == e.target.id){
+        if(divsFundamentacion[i].classList.contains(e.target.id)){
             divsFundamentacion[i].classList.add("div-select")
             if(i%2!==0){
                 divsFundamentacion[i].children[0].classList.add("img-select")
             }
-        }else{
+        }else if (e.target.tagName == "LI") {
             divsFundamentacion[i].classList.remove("div-select")
         }
     }
