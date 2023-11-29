@@ -27,4 +27,19 @@ const nav = document.getElementById("nav")
     }
 };
 
-// Renderización dinámica de componentes
+// Controlador menú fundamentación del proyecto
+
+const navFundamentacion = document.getElementById("nav-fundam")
+const divFundamentacion = document.getElementsByClassName("porque")
+
+navFundamentacion.addEventListener('click', (e)=>{
+    const elementosNav = e.target.parentElement.children
+    for(let i=0; i<elementosNav.length; i++){
+        if(elementosNav[i].classList == "nav-select"){
+            elementosNav[i].classList.remove("nav-select")
+        }
+    }
+    e.target.classList = "nav-select"
+
+    // if classList de los div == id del target, entonces agregar class div-select
+})
