@@ -40,12 +40,12 @@ navFundamentacion.addEventListener('click', (e)=>{
         }
     }
     e.target.classList = "nav-select"
-
-    // if classList de los div == id del target, entonces agregar class div-select
-    console.log(e.target.classList)
     for(let i=0; i<divsFundamentacion.length; i++){
         if(divsFundamentacion[i].classList == e.target.id){
             divsFundamentacion[i].classList.add("div-select")
+            if(i%2!==0){
+                divsFundamentacion[i].children[0].classList.add("img-select")
+            }
         }else{
             divsFundamentacion[i].classList.remove("div-select")
         }
