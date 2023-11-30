@@ -27,7 +27,7 @@ const nav = document.getElementById("nav")
     }
 };
 
-// Controlador menú fundamentación del proyecto
+// Controlador nav fundamentación del proyecto
 
 const navFundamentacion = document.getElementById("nav-fundam")
 const divsFundamentacion = document.querySelectorAll(".porque div")
