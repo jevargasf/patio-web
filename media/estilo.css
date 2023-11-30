@@ -101,6 +101,11 @@ header nav.opacidad{
 	opacity: 0.0;
 }
 
+nav a{
+	text-decoration: none;
+	color: #000;
+}
+
 nav ul{
 	display: flex;
 	box-sizing: border-box;
@@ -232,6 +237,7 @@ section{
 /*///////////////////// CAPITULOS ///////////////////////////////*/
 
 #capitulos{
+	padding-top: 100px;
 	height: max-content;
 	view-timeline-name: --image;
 	view-timeline-axis: block;
@@ -292,10 +298,8 @@ section{
 .porque {
 	margin: 200px auto 0;
 	display: flex;
-	color: #00f;
 	flex-wrap: wrap;
 	justify-content: center;
-	border: solid 1px;
 }
 
 .porque ul{
@@ -303,8 +307,11 @@ section{
 	display: flex;
 	justify-content: space-evenly;
 	text-align: center;
+	border-top: solid 1px;
 	border-bottom: solid 1px;
 	background-color: #00f;
+	border-left: solid 1px #00f;
+	margin-top: 100px;
 }
 
 .porque li{
@@ -315,6 +322,7 @@ section{
 	width: 100%;
 	padding: 1rem;
 	color: rgb(240,240,240);
+	cursor: pointer;
 }
 
 .porque .nav-select{
@@ -349,11 +357,21 @@ section{
 
 
 .porque .div-select{
-	max-width: 48%;
+	max-width: 50%;
+	width: 50%;
+	padding: .5rem;
 	box-sizing: border-box;
-	margin: .5rem;
 	display: flex;
 	flex-direction: column;
+	border-bottom: solid 1px #00f;
+}
+
+.porque .div-select:nth-child(2n){
+	border-left: solid 1px #00f;	
+}
+
+.porque .div-select:nth-child(2n+1){
+	border-right: solid 1px #00f;
 	overflow: hidden;
 }
 
@@ -364,7 +382,7 @@ section{
 /* //////////////////// PATREON ////////////////// */
 
 .patreon{
-
+	padding-top: 150px;
 	margin: 50px auto;
 	width: 75%;
 }
@@ -410,6 +428,7 @@ section{
 
 .plataforma{
 	margin-top: 100px;
+	padding-top: 150px;
 }
 
 .plataforma dl{
@@ -570,7 +589,8 @@ footer h3{
 
 /*///////////////////// MEDIA QUERIES ///////////////////////////////*/
 
-@media (max-width: 1000px) {
+/* 
+@media screen and (max-width: 1024px) {
 	main{
 		width:100%;
 		display: block;
@@ -623,5 +643,11 @@ footer h3{
 
 /* FOOTER */
 
+/* 
+} */
+
+
+/* MÓVIL */
+@media screen and (max-width: 767px){
 
 }
