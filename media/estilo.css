@@ -668,6 +668,7 @@ footer h3{
 /* PLATAFORMA */
 .plataforma{
 	max-width: 100%;
+	overflow: hidden;
 }
 
 
