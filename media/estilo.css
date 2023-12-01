@@ -655,9 +655,7 @@ footer h3{
 
 
 /* INTRO */
-#tituloIntro{
-	font-size: 2rem;
-}
+
 /* CAPÍTULOS */
 
 #slider{
@@ -668,7 +666,9 @@ footer h3{
 
 
 /* PLATAFORMA */
-
+.plataforma{
+	max-width: 100%;
+}
 
 
 /* RIFA */
