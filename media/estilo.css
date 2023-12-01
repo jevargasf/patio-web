@@ -658,6 +658,7 @@ header{
 
 .plataforma .texto{
 	max-width: 100%;
+	box-sizing: border-box;
 }
 
 .plataforma dt{
