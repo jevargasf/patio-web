@@ -83,7 +83,7 @@ header{
 	height: 50px;
 	margin: 0 auto;
 	top: 4%;
-	width: 100%;
+	width: 90%;
 	z-index: 5;
 }
 
@@ -399,7 +399,9 @@ section{
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 3rem;
 	row-gap: 2rem;
+	grid-auto-flow: dense;
 }
+
 
 .plataforma div{
 	text-align: right;
@@ -410,6 +412,7 @@ section{
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 2rem;
+	text-align: left;	
 }
 
 .plataforma dt{
@@ -424,14 +427,14 @@ section{
 	letter-spacing: 1px;
 	font-size: .6rem;
 	line-height: .75rem;
-	text-align: right;	
 	margin: auto;
 	width: 100%;
 	flex-basis: 100%;
 }
 
-.plataforma .contenedor-izquierda dt, .plataforma .contenedor-izquierda dd{
-	text-align: left;
+.texto:nth-child(odd of .texto){
+	grid-column: 2;
+	text-align: right;
 }
 
 .plataforma img{
