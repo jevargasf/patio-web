@@ -364,7 +364,6 @@ section{
 .porque .div-select{
 	max-width: 50%;
 	width: 50%;
-	padding: .5rem;
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
@@ -373,6 +372,7 @@ section{
 
 .porque .div-select:nth-child(2n){
 	border-left: solid 1px #00f;	
+	padding: .5rem;
 }
 
 .porque .div-select:nth-child(2n+1){
@@ -595,72 +595,49 @@ footer h3{
 
 /*///////////////////// MEDIA QUERIES ///////////////////////////////*/
 
-/* 
-@media screen and (max-width: 1024px) {
-	main{
-		width:100%;
-		display: block;
-		margin: 0 auto;
-		position: relative;
-
-	}
-
-	header{
-		padding:0px 25px 0px 20px;
-		box-sizing: border-box;
-		width:100%;
-
-	}
-
-	#intro p {
-
-		margin: 0px 20px 0px 20px;
-
-	}
-
-	#fondo1{
-		left: 10%;
-	}
-
-
-/* POR QUÉ */
-
-/* .porque{
-	margin-top: 200px;
-	flex-wrap: wrap;
-	height: auto;
-	justify-content: center;
-}
-
-.porque img {
-	margin-top: 1rem;
-	max-width: 425px;
-} */
-
-/* PATREON  */
-
-
-/* PLATAFORMA */
-
-
-
-/* RIFA */
-
-
-/* FOOTER */
-
-/* 
-} */
-
-
 /* MÓVIL */
 @media screen and (max-width: 576px){
 /* PRINCIPAL */
 
+header{
+	width: 90%;
+}
 
 /* INTRO */
 
+.intro p{
+	margin: 0px 100px 0px 100px;
+}
 /* CAPÍTULOS */
+
+.slider h3{
+	font-size: 1.4rem;
+}
+
+/* FUNDAMENTACIÓN */
+
+.porque .div-select{
+	max-width: 100%;
+	width: 100%;
+}
+
+.slider p, .slider h4{
+	font-size: .9rem;
+}
+
+.porque .div-select:nth-child(2n){
+	border-left: solid 1px #00f;
+	border-right: solid 1px #00f;	
+	border-bottom: 0px;
+}
+
+.porque .div-select:nth-child(2n+1){
+	overflow: hidden;
+	outline: 10px solid #f0f0f0;
+	outline-offset: -11px;
+	border-left: solid 1px #00f;
+	border-right: solid 1px #00f;
+}
 
 /* PATREON  */
 
