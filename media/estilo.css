@@ -8,8 +8,8 @@
 	font-weight: normal;
 	font-family: 'Times New Roman', Times, serif;
 	color: #00f;
-/* 	outline: 1px solid red;
- */}
+	outline: 1px solid red;
+}
 
 body{
 	width:100%;
@@ -646,6 +646,10 @@ header{
 	border-right: solid 1px #00f;
 }
 
+.porque .img-select{
+	max-width: 750px;
+}
+
 /* PLATAFORMA */
 
 .plataforma dl{
@@ -675,18 +679,26 @@ header{
 }
 
 .plataforma img{
-	max-width: 90%;
-	margin: 0 auto;
-	overflow: hidden;
+	max-width: 100%;
 }
 /* PATREON  */
 
-
+.patreon{
+	padding-top: 50px;
+	width: 90%;
+}
 
 /* RIFA */
 
+#rifa{
+	font-size: .8em;
+}
+
 #rifa6 button{
 	width: 25%;
+	padding: 0;
+	font-size: 1.5rem;
+	border: solid 2px #f0f0f0;
 }
 
 /* FOOTER */
@@ -696,11 +708,11 @@ footer .icono{
 }
 
 footer h1{
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 footer h3{
-	font-size: .8rem;
+	font-size: .75rem;
 }
 
 }
