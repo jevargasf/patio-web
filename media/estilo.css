@@ -8,7 +8,7 @@
 	font-weight: normal;
 	font-family: 'Times New Roman', Times, serif;
 	color: #00f;
-	outline: 1px solid red;
+/* 	outline: 1px solid red; */
 }
 
 body{
@@ -251,6 +251,10 @@ section{
 
 /* ESTILOS SLIDER  */
 
+.slider{
+	margin-left: 3%;
+	margin-right: 3%;
+}
 
 
 .card{
@@ -657,10 +661,6 @@ footer h3{
 /* INTRO */
 
 /* CAPÍTULOS */
-
-#slider{
-	width: 90%;
-}
 
 /* PATREON  */
 
