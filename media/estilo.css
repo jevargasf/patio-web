@@ -408,8 +408,7 @@ section{
 
 .plataforma div{
 	box-sizing: border-box;
-/* 	border-top: dotted 3px;
- */	
+	border-top: dotted 3px;
 	max-width: 100%;
 	width: 100%;
 	display: flex;
