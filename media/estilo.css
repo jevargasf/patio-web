@@ -656,6 +656,10 @@ header{
 	
 }
 
+.plataforma div{
+	max-width: 100%;
+}
+
 .plataforma dt{
 	font-size: 2rem;
 }
