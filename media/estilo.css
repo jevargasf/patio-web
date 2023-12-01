@@ -407,10 +407,9 @@ section{
 
 
 .plataforma div{
-	text-align: right;
 	box-sizing: border-box;
-	border-top: dotted 3px;
-	height: 100%;
+/* 	border-top: dotted 3px;
+ */	height: 100%;
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
