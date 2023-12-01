@@ -8,7 +8,7 @@
 	font-weight: normal;
 	font-family: 'Times New Roman', Times, serif;
 	color: #00f;
-/* 	outline: 1px solid red; */
+	outline: 1px solid red;
 }
 
 body{
@@ -70,7 +70,7 @@ content{
 }
 
 main{
-	width:1000px;
+	width:100%;
 	display: block;
 	margin: 0 auto;
 }
@@ -83,7 +83,7 @@ header{
 	height: 50px;
 	margin: 0 auto;
 	top: 4%;
-	width: 1000px;
+	width: 100%;
 	z-index: 5;
 }
 
@@ -250,6 +250,8 @@ section{
 }
 
 /* ESTILOS SLIDER  */
+
+
 
 .card{
 	height: auto;
@@ -650,12 +652,15 @@ footer h3{
 /* MÓVIL */
 @media screen and (max-width: 576px){
 /* PRINCIPAL */
-main{
-	width: 100%;
-}
+
 
 /* INTRO */
 
+/* CAPÍTULOS */
+
+#slider{
+	width: 90%;
+}
 
 /* PATREON  */
 
