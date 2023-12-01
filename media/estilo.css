@@ -655,7 +655,9 @@ footer h3{
 
 
 /* INTRO */
-
+#tituloIntro{
+	font-size: 2rem;
+}
 /* CAPÍTULOS */
 
 #slider{
