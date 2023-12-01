@@ -652,6 +652,7 @@ header{
 	display: grid;
 	grid-template-rows: repeat(6, 1fr);
 	grid-template-columns: repeat(1, 1fr);
+	
 }
 
 .plataforma dt{
@@ -661,8 +662,13 @@ header{
 .plataforma dd{
 	font-size: 1rem;
 	line-height: 1rem;
+
 }
 
+.texto:nth-child(odd of .texto){
+	grid-column: 1;
+	text-align: right;
+}
 
 
 /* PATREON  */
