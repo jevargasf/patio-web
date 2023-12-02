@@ -613,7 +613,7 @@ header{
 /* INTRO */
 
 .intro p{
-	margin: 0px 100px 0px 100px;
+	margin: 0px 75px 0px 75px;
 }
 /* CAPÍTULOS */
 
@@ -691,6 +691,7 @@ header{
 /* RIFA */
 
 #rifa{
+	max-width: 100%;
 	font-size: .8em;
 }
 
